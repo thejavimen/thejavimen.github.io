@@ -23,7 +23,7 @@ function initMap() {
   // Ícono de scooter personalizado
     const scooterIcon = {
         url: 'scooter-marker.png',  // Ruta del ícono personalizado
-        scaledSize: new google.maps.Size(30, 30),  // Tamaño del ícono
+        scaledSize: new google.maps.Size(51, 51),  // Tamaño del ícono
     };
 
   marker = new google.maps.Marker({
