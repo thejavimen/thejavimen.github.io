@@ -8,12 +8,10 @@ const firebaseConfig = {
   messagingSenderId: "123456789012",
   appId: "1:123456789012:web:abcdefghij123456"
 };
-
 // Inicializa Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
-// Inicializa Google Maps
 let map;
 let marker;
 
@@ -30,7 +28,7 @@ function initMap() {
   });
 
   // Escucha los cambios en Firebase en tiempo real
-  const locationRef = database.ref("scooter/ubicacion");
+  const locationRef = database.ref("scooter/location");
   locationRef.on("value", (snapshot) => {
     const data = snapshot.val();
     if (data) {
@@ -43,6 +41,3 @@ function initMap() {
     }
   });
 }
-
-// Iniciar el mapa al cargar la página
-window.onload = initMap;
