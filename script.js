@@ -20,11 +20,17 @@ function initMap() {
     center: { lat: -16.398982, lng: -71.536750 }, // Coordenadas iniciales
     zoom: 15,
   });
+  // Ícono de scooter personalizado
+    const scooterIcon = {
+        url: 'scooter-marker.png',  // Ruta del ícono personalizado
+        scaledSize: new google.maps.Size(50, 50),  // Tamaño del ícono
+    };
 
   marker = new google.maps.Marker({
     position: { lat: -16.398982, lng: -71.536750 },
     map: map,
-    title: "Ubicación Actual",
+    icon:scooterIcon,
+    visible: false,
   });
 
   // Escucha los cambios en Firebase en tiempo real
