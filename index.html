@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1>Ubicación en Tiempo Real</h1>
-    <div id="map"></div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
 
     <!-- Cargar el SDK de Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database-compat.js"></script>
-    
-    <!-- Cargar Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+
+    <!-- Cargar Google Maps de manera asíncrona -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
     
     <!-- Script propio -->
     <script src="script.js"></script>
