@@ -29,8 +29,7 @@ function initMap() {
   marker = new google.maps.Marker({
     position: { lat: -16.398982, lng: -71.536750 },
     map: map,
-    icon:scooterIcon,
-    visible: false,
+    icon:scooterIcon
   });
 
   // Escucha los cambios en Firebase en tiempo real
