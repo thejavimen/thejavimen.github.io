@@ -1,12 +1,12 @@
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  databaseURL: "TU_DATABASE_URL",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID"
+  apiKey: "AIzaSyD4xj2iaaewQ-gCSZfvZhTgAC5PmHCMxho",
+  authDomain: "basedatos1-c3ea7.firebaseapp.com",
+  databaseURL: "https://basedatos1-c3ea7-default-rtdb.firebaseio.com",
+  projectId: "basedatos1-c3ea7",
+  storageBucket: "basedatos1-c3ea7.appspot.com",
+  messagingSenderId: "123456789012",
+  appId: "1:123456789012:web:abcdefghij123456"
 };
 
 // Inicializa Firebase
