@@ -17,7 +17,7 @@ let marker;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -13.517088, lng: -71.978535 }, // Coordenadas iniciales
+    center: { lat: lat: -16.398982, lng: -71.536750 }, // Coordenadas iniciales
     zoom: 15,
   });
 
