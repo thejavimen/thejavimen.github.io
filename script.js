@@ -22,7 +22,7 @@ function initMap() {
   });
 
   marker = new google.maps.Marker({
-    position: { lat: -13.517088, lng: -71.978535 },
+    position: { lat: -16.398982, lng: -71.536750 },
     map: map,
     title: "Ubicación Actual",
   });
