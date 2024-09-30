@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realtime Map from Firebase</title>
+    <title>Realtime Map - Xiaomi 4 Ultra</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="scooter-icon.png"> <!-- Ícono del sitio -->
 </head>
 <body>
-    <h1>Ubicación en Tiempo Real</h1>
-    <div id="map" style="height: 500px; width: 100%;"></div>
+    <header>
+        <h1>
+            <img src="scooter-title-icon.png" alt="Scooter Icon" class="title-icon">
+            Rastreo de Xiaomi 4 Ultra
+        </h1>
+    </header>
+
+    <main>
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Xiaomi 4 Ultra Tracker. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Cargar el SDK de Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
@@ -20,7 +33,7 @@
       async
       defer
     ></script>
-    
+
     <!-- Script propio -->
     <script src="script.js"></script>
 </body>
