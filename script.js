@@ -10,7 +10,7 @@ const firebaseConfig = {
 };
 
 // Inicializa Firebase
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
 // Inicializa Google Maps
@@ -30,7 +30,7 @@ function initMap() {
   });
 
   // Escucha los cambios en Firebase en tiempo real
-  const locationRef = database.ref("scooter/location");
+  const locationRef = database.ref("scooter/ubicacion");
   locationRef.on("value", (snapshot) => {
     const data = snapshot.val();
     if (data) {
