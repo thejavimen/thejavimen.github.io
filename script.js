@@ -28,7 +28,7 @@ function initMap() {
   });
 
   // Escucha los cambios en Firebase en tiempo real
-  const locationRef = database.ref("scooter/location");
+  const locationRef = database.ref("scooter/ubicacion");
   locationRef.on("value", (snapshot) => {
     const data = snapshot.val();
     if (data) {
